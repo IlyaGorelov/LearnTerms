@@ -19,7 +19,7 @@ public class CreateTermsAndDescription : MonoBehaviour
             string newTerm = term.Replace('–', '-');
             if (newTerm.Contains('-'))
             {
-                string[] temp = newTerm.Split('-');
+                string[] temp = newTerm.Split('-',2);
                 temp[0] = temp[0].Trim();
                 temp[1] = temp[1].Trim();
                 terms.Add(temp[0]);
